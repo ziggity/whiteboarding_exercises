@@ -17,3 +17,11 @@ return result;
 
 console.log(reverse("apple"));
 module.exports = reverse;
+
+
+//or es6 style
+function reverse1(str){
+  return str.split('').reduce((rev,char) => char + rev, '');
+}
+
+console.log(reverse1("hi"));
