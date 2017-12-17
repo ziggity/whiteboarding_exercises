@@ -30,5 +30,6 @@ function maxChar(str) {
 }
 
 
+
 console.log(maxChar("apple 12111111"));
 module.exports = maxChar;
