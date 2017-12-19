@@ -18,4 +18,4 @@ function chunk(array, size){
   }
   return chunked;
 }
- chunk([50,1, 2, 3, 4, 50], 2);
+ chunk([50,1, 2, 3, 4, 50], 2); // => [ [ 50, 1 ], [ 2, 3 ], [ 4, 50 ] ]
