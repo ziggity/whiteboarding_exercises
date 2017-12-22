@@ -7,7 +7,23 @@
 // forms the first ten entries of the fibonacci series.
 // Example:
 //   fib(4) === 3
+//
+// function fib(n) {
+//
+//   const result = [0,1];
+//   for(let i=2; i<=n; i++){
+//     const a = result[i-1];
+//     const b = result[i-2];
+//     result.push(a+b);
+//   }
+//   return result[n];
+// }
 
-function fib(n) {}
-
+function fib(n) {
+  if (n < 2) {
+    return 1;
+  } else {
+    return fib(n - 2) + fib(n - 1);
+  }
+}
 module.exports = fib;
